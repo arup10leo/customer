@@ -44,8 +44,7 @@ if st.button('Predict Price'):
     
  cluster=int(pipe.predict(query))
  st.title(cluster)
- cluster_1_df = df[df["Cluster"]==cluster]
- st.dataframe(cluster_1_df)
+ 
  
 
 
