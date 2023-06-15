@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pickle
 np.bool = np.bool_
-np.object - object
+np.object = object
 
 
 # import the model
