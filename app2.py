@@ -35,7 +35,7 @@ credit_limit=st.number_input(label='Credit Limit',step=0.1,format="%.1f")
 payments=st.number_input(label='Payments',step=0.01,format="%.6f")
 minimum_payments=st.number_input(label='Minimum Payments',step=0.01,format="%.6f")
 prc_full_payment=st.number_input(label='PRC Full Payment',step=0.01,format="%.6f")
-tenure=st.number_input(label='Tenure',step=1)
+tenure=st.number_input(label='Tenure',step=0.1)
 
 if st.button('Predict Price'):
  query = np.array([balance,balance_frequency,purchases,oneoff_purchases,installments_purchases,cash_advance,purchases_frequency,oneoff_purchases_frequency,purchases_installment_frequency,cash_advance_frequency,cash_advance_trx,purchases_trx,credit_limit,payments,minimum_payments,prc_full_payment,tenure])
